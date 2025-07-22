@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #1E4557;
+  --secondary-color: #FAFBFF;
+  --text-color: #000;
+  --secondary-text-color: #ACACAC;
+  --green-text-color: #00AC4F;
+  --red-text-color: #D0004B;
+  --text-white: #fff;
+  --violet-color: #6152B5;
+  --yellow-color: #E8C539;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--primary-color) var(--secondary-color); /* Firefox */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Chrome, Edge, Safari Scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border: 2px solid var(--secondary-color);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #16323f; /* darker on hover */
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Custom animation for scaling up */
+@layer utilities {
+  .animate-scaleUp {
+    animation: scaleUp 0.3s ease-out forwards;
+  }
+
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

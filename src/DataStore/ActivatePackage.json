@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://images.pexels.com/photos/459335/pexels-photo-459335.jpeg",
+    "packageName": "China Explorer",
+    "theme": "Adventure",
+    "duration": "7N/6D",
+    "inclusion": "Flights, Hotel, Guide",
+    "price": 75200
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg",
+    "packageName": "Paris Romance",
+    "theme": "Honeymoon",
+    "duration": "5N/4D",
+    "inclusion": "Flights, Hotel, Breakfast",
+    "price": 112000
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://images.pexels.com/photos/210557/pexels-photo-210557.jpeg",
+    "packageName": "Desert Safari Dubai",
+    "theme": "Adventure",
+    "duration": "4N/3D",
+    "inclusion": "Hotel, Desert Safari, Meals",
+    "price": 49800
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
+    "packageName": "Thailand Getaway",
+    "theme": "Beach",
+    "duration": "6N/5D",
+    "inclusion": "Flights, Hotel, Island Tour",
+    "price": 64999
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg",
+    "packageName": "Bali Bliss",
+    "theme": "Relaxation",
+    "duration": "5N/4D",
+    "inclusion": "Hotel, Spa, Transfers",
+    "price": 55800
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://images.pexels.com/photos/290120/pexels-photo-290120.jpeg",
+    "packageName": "Kashmir Paradise",
+    "theme": "Nature",
+    "duration": "6N/5D",
+    "inclusion": "Flights, Hotel, Shikara Ride",
+    "price": 38800
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://images.pexels.com/photos/161956/santorini-travel-holiday-vacation-161956.jpeg",
+    "packageName": "Greek Islands",
+    "theme": "Luxury",
+    "duration": "8N/7D",
+    "inclusion": "Cruise, Hotel, Food",
+    "price": 150000
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://images.pexels.com/photos/91224/pexels-photo-91224.jpeg",
+    "packageName": "Swiss Alps Tour",
+    "theme": "Honeymoon",
+    "duration": "6N/5D",
+    "inclusion": "Hotel, Train Pass, Meals",
+    "price": 134500
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg",
+    "packageName": "Singapore Highlights",
+    "theme": "Family",
+    "duration": "5N/4D",
+    "inclusion": "Flights, Hotel, Universal Studios",
+    "price": 86500
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg",
+    "packageName": "Rajasthan Royal Tour",
+    "theme": "Heritage",
+    "duration": "7N/6D",
+    "inclusion": "Hotel, Palace Visits, Meals",
+    "price": 45500
+  }
+]

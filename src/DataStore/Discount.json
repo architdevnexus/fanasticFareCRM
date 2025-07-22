@@ -1,0 +1,102 @@
+[
+  {
+    "discountCode": "DISC10IND",
+    "airline": "IndiGo",
+    "route": "DEL-BOM",
+    "type": "percentage",
+    "userType": "B2C",
+    "value": 10,
+    "status": "Active",
+    "validTill": "2025-08-31"
+  },
+  {
+    "discountCode": "FIXED500AI",
+    "airline": "Air India",
+    "route": "BLR-DEL",
+    "type": "fixed",
+    "userType": "Corporate",
+    "value": 500,
+    "status": "Active",
+    "validTill": "2025-12-31"
+  },
+  {
+    "discountCode": "B2BSPICE15",
+    "airline": "SpiceJet",
+    "route": "HYD-BOM",
+    "type": "percentage",
+    "userType": "B2B",
+    "value": 15,
+    "status": "Inactive",
+    "validTill": "2024-12-01"
+  },
+  {
+    "discountCode": "CORP300VIST",
+    "airline": "Vistara",
+    "route": "DEL-CCU",
+    "type": "fixed",
+    "userType": "Corporate",
+    "value": 300,
+    "status": "Active",
+    "validTill": "2025-09-15"
+  },
+  {
+    "discountCode": "FLYGO20",
+    "airline": "Go First",
+    "route": "BOM-GOA",
+    "type": "percentage",
+    "userType": "B2C",
+    "value": 20,
+    "status": "Active",
+    "validTill": "2025-10-10"
+  },
+  {
+    "discountCode": "AIRASIA250",
+    "airline": "AirAsia India",
+    "route": "MAA-HYD",
+    "type": "fixed",
+    "userType": "B2B",
+    "value": 250,
+    "status": "Inactive",
+    "validTill": "2024-11-30"
+  },
+  {
+    "discountCode": "INDVIP50",
+    "airline": "IndiGo",
+    "route": "DEL-IXC",
+    "type": "fixed",
+    "userType": "Corporate",
+    "value": 600,
+    "status": "Active",
+    "validTill": "2025-08-01"
+  },
+  {
+    "discountCode": "B2C15VISTARA",
+    "airline": "Vistara",
+    "route": "BLR-GAU",
+    "type": "percentage",
+    "userType": "B2C",
+    "value": 15,
+    "status": "Active",
+    "validTill": "2025-11-25"
+  },
+  {
+    "discountCode": "AIFIX300",
+    "airline": "Air India",
+    "route": "BOM-MAA",
+    "type": "fixed",
+    "userType": "B2B",
+    "value": 300,
+    "status": "Inactive",
+    "validTill": "2024-09-15"
+  },
+  {
+    "discountCode": "SPICEFEST25",
+    "airline": "SpiceJet",
+    "route": "DEL-HYD",
+    "type": "percentage",
+    "userType": "B2C",
+    "value": 25,
+    "status": "Active",
+    "validTill": "2025-12-20"
+  }
+]

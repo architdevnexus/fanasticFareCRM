@@ -1,0 +1,202 @@
+[
+  {
+    "ruleId": "M001",
+    "route": "DEL-BOM",
+    "airline": "IndiGo",
+    "class": "Economy",
+    "userGroup": "B2C",
+    "markupType": "percentage",
+    "value": 10,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M002",
+    "route": "DEL-BOM",
+    "airline": "Air India",
+    "class": "Business",
+    "userGroup": "Corporate",
+    "markupType": "fixed",
+    "value": 1500,
+    "status": "Inactive"
+  },
+  {
+    "ruleId": "M003",
+    "route": "BLR-HYD",
+    "airline": "SpiceJet",
+    "class": "Economy",
+    "userGroup": "B2B",
+    "markupType": "percentage",
+    "value": 5,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M004",
+    "route": "DEL-IXC",
+    "airline": "Vistara",
+    "class": "Economy",
+    "userGroup": "Corporate",
+    "markupType": "fixed",
+    "value": 300,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M005",
+    "route": "BOM-MAA",
+    "airline": "Go First",
+    "class": "Business",
+    "userGroup": "B2C",
+    "markupType": "percentage",
+    "value": 12,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M006",
+    "route": "CCU-DEL",
+    "airline": "AirAsia India",
+    "class": "Economy",
+    "userGroup": "B2B",
+    "markupType": "fixed",
+    "value": 450,
+    "status": "Inactive"
+  },
+  {
+    "ruleId": "M007",
+    "route": "HYD-BLR",
+    "airline": "IndiGo",
+    "class": "Business",
+    "userGroup": "Corporate",
+    "markupType": "percentage",
+    "value": 8,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M008",
+    "route": "DEL-MAA",
+    "airline": "Air India",
+    "class": "Economy",
+    "userGroup": "B2C",
+    "markupType": "fixed",
+    "value": 200,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M009",
+    "route": "BOM-DEL",
+    "airline": "SpiceJet",
+    "class": "Business",
+    "userGroup": "B2B",
+    "markupType": "percentage",
+    "value": 15,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M010",
+    "route": "MAA-DEL",
+    "airline": "Vistara",
+    "class": "Economy",
+    "userGroup": "Corporate",
+    "markupType": "fixed",
+    "value": 250,
+    "status": "Inactive"
+  },
+  {
+    "ruleId": "M011",
+    "route": "DEL-BLR",
+    "airline": "Go First",
+    "class": "Economy",
+    "userGroup": "B2B",
+    "markupType": "percentage",
+    "value": 7,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M012",
+    "route": "CCU-BOM",
+    "airline": "AirAsia India",
+    "class": "Business",
+    "userGroup": "Corporate",
+    "markupType": "fixed",
+    "value": 600,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M013",
+    "route": "BLR-DEL",
+    "airline": "IndiGo",
+    "class": "Economy",
+    "userGroup": "B2C",
+    "markupType": "percentage",
+    "value": 9,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M014",
+    "route": "DEL-GAU",
+    "airline": "Air India",
+    "class": "Business",
+    "userGroup": "B2C",
+    "markupType": "fixed",
+    "value": 1000,
+    "status": "Inactive"
+  },
+  {
+    "ruleId": "M015",
+    "route": "IXC-BOM",
+    "airline": "Vistara",
+    "class": "Economy",
+    "userGroup": "B2B",
+    "markupType": "percentage",
+    "value": 6,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M016",
+    "route": "BOM-HYD",
+    "airline": "SpiceJet",
+    "class": "Business",
+    "userGroup": "Corporate",
+    "markupType": "fixed",
+    "value": 850,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M017",
+    "route": "DEL-BOM",
+    "airline": "IndiGo",
+    "class": "Business",
+    "userGroup": "B2C",
+    "markupType": "percentage",
+    "value": 14,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M018",
+    "route": "MAA-HYD",
+    "airline": "Go First",
+    "class": "Economy",
+    "userGroup": "Corporate",
+    "markupType": "fixed",
+    "value": 500,
+    "status": "Inactive"
+  },
+  {
+    "ruleId": "M019",
+    "route": "DEL-BOM",
+    "airline": "AirAsia India",
+    "class": "Business",
+    "userGroup": "B2B",
+    "markupType": "percentage",
+    "value": 11,
+    "status": "Active"
+  },
+  {
+    "ruleId": "M020",
+    "route": "CCU-MAA",
+    "airline": "IndiGo",
+    "class": "Economy",
+    "userGroup": "B2C",
+    "markupType": "fixed",
+    "value": 350,
+    "status": "Active"
+  }
+]

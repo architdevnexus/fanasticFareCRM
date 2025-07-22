@@ -1,0 +1,50 @@
+[
+  {
+    "month": "January",
+    "revenue": 520000
+  },
+  {
+    "month": "February",
+    "revenue": 480000
+  },
+  {
+    "month": "March",
+    "revenue": 610000
+  },
+  {
+    "month": "April",
+    "revenue": 550000
+  },
+  {
+    "month": "May",
+    "revenue": 590000
+  },
+  {
+    "month": "June",
+    "revenue": 630000
+  },
+  {
+    "month": "July",
+    "revenue": 680000
+  },
+  {
+    "month": "August",
+    "revenue": 720000
+  },
+  {
+    "month": "September",
+    "revenue": 690000
+  },
+  {
+    "month": "October",
+    "revenue": 750000
+  },
+  {
+    "month": "November",
+    "revenue": 700000
+  },
+  {
+    "month": "December",
+    "revenue": 780000
+  }
+]
