@@ -35,9 +35,7 @@ export default function BookingOperationTable() {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <span className="text-lg font-semibold text-gray-700">Booking Operations</span>
-        <button className="border border-[var(--primary-color)] text-[var(--primary-color)] px-4 py-1 rounded-md hover:bg-[var(--primary-color)] hover:text-white transition duration-300">
-          Export To Excel
-        </button>
+ 
       </div>
 
       {/* Table */}

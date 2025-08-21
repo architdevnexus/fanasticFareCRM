@@ -16,7 +16,7 @@
     "class": "Business",
     "userGroup": "Corporate",
     "markupType": "fixed",
-    "value": 1500,
+    "value": 15020,
     "status": "Inactive"
   },
   {
@@ -36,7 +36,7 @@
     "class": "Economy",
     "userGroup": "Corporate",
     "markupType": "fixed",
-    "value": 300,
+    "value": 30100,
     "status": "Active"
   },
   {
@@ -56,7 +56,7 @@
     "class": "Economy",
     "userGroup": "B2B",
     "markupType": "fixed",
-    "value": 450,
+    "value": 4500,
     "status": "Inactive"
   },
   {
@@ -76,7 +76,7 @@
     "class": "Economy",
     "userGroup": "B2C",
     "markupType": "fixed",
-    "value": 200,
+    "value": 20221,
     "status": "Active"
   },
   {
@@ -96,7 +96,7 @@
     "class": "Economy",
     "userGroup": "Corporate",
     "markupType": "fixed",
-    "value": 250,
+    "value": 25082,
     "status": "Inactive"
   },
   {
@@ -116,7 +116,7 @@
     "class": "Business",
     "userGroup": "Corporate",
     "markupType": "fixed",
-    "value": 600,
+    "value": 6002,
     "status": "Active"
   },
   {
@@ -136,7 +136,7 @@
     "class": "Business",
     "userGroup": "B2C",
     "markupType": "fixed",
-    "value": 1000,
+    "value": 12032,
     "status": "Inactive"
   },
   {
@@ -156,7 +156,7 @@
     "class": "Business",
     "userGroup": "Corporate",
     "markupType": "fixed",
-    "value": 850,
+    "value": 85011,
     "status": "Active"
   },
   {
@@ -176,7 +176,7 @@
     "class": "Economy",
     "userGroup": "Corporate",
     "markupType": "fixed",
-    "value": 500,
+    "value": 5000,
     "status": "Inactive"
   },
   {
@@ -196,7 +196,7 @@
     "class": "Economy",
     "userGroup": "B2C",
     "markupType": "fixed",
-    "value": 350,
+    "value": 35011,
     "status": "Active"
   }
 ]

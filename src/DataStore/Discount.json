@@ -15,7 +15,7 @@
     "route": "BLR-DEL",
     "type": "fixed",
     "userType": "Corporate",
-    "value": 500,
+    "value": 5011,
     "status": "Active",
     "validTill": "2025-12-31"
   },
@@ -35,7 +35,7 @@
     "route": "DEL-CCU",
     "type": "fixed",
     "userType": "Corporate",
-    "value": 300,
+    "value": 6000,
     "status": "Active",
     "validTill": "2025-09-15"
   },
@@ -55,7 +55,7 @@
     "route": "MAA-HYD",
     "type": "fixed",
     "userType": "B2B",
-    "value": 250,
+    "value": 5519,
     "status": "Inactive",
     "validTill": "2024-11-30"
   },
@@ -85,7 +85,7 @@
     "route": "BOM-MAA",
     "type": "fixed",
     "userType": "B2B",
-    "value": 300,
+    "value": 30011,
     "status": "Inactive",
     "validTill": "2024-09-15"
   },

@@ -10,12 +10,14 @@ import {
   MdHotel,
   MdOutlineFlight,
 } from "react-icons/md";
-import { FaHotel } from "react-icons/fa6";
-import { LuBaggageClaim } from "react-icons/lu";
-import { BiSolidMessageSquareDetail } from "react-icons/bi";
+import { FaHotel, FaLightbulb, FaPlane, FaSliders } from "react-icons/fa6";
+import { LuBaggageClaim, LuChartNoAxesCombined, LuNotebookPen } from "react-icons/lu";
+import { BiSolidMessageSquareDetail, BiSolidOffer } from "react-icons/bi";
 import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
+import { FaQuestionCircle } from "react-icons/fa";
+import { GiReceiveMoney } from "react-icons/gi";
 
-export default function Navbar({isCollapsed = false, setIsCollapsed}) {
+export default function Navbar({ isCollapsed = false, setIsCollapsed }) {
   const navigate = useNavigate();
   const location = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
@@ -47,70 +49,126 @@ export default function Navbar({isCollapsed = false, setIsCollapsed}) {
 
   const mainmenu = [
     {
-      icon: <MdDashboard />, label: "Dashboard", path: "/dashboard",
-      submenu: [{ icon: <MdDashboard />, label: "Dashboard 1", path: "/dashboard/overview" }]
+      icon: <MdDashboard />,
+      label: "Dashboard",
+      path: "/dashboard",
+
+    },
+    // {
+    //   icon: <MdOutlineFlight />,
+    //   label: "Flight Management",
+    //   path: "/flight",
+   
+    // },
+    {
+      icon: <MdHotel />,
+      label: "Hotel Management",
+      path: "/hotel",
+   
     },
     {
-      icon: <MdOutlineFlight />, label: "Flight Management", path: "/flight",
-      submenu: [
-        { icon: <MdAddCall />, label: "Flight Booking", path: "/flight/booking" },
-        { icon: <MdOutlineCancelScheduleSend />, label: "Flight Schedule", path: "/flight/schedule" },
-        { icon: <LuBaggageClaim />, label: "Flight Status", path: "/flight/status" },
-      ]
+      icon: <MdOutlineCancelScheduleSend />,
+      label: "Holiday Management",
+      path: "/holiday",
+
     },
     {
-      icon: <MdHotel />, label: "Hotel Management", path: "/hotel",
-      submenu: [
-        { icon: <MdAddCall />, label: "Hotel Booking", path: "/hotel/booking" },
-        { icon: <MdOutlineCancelScheduleSend />, label: "Hotel Schedule", path: "/hotel/schedule" },
-        { icon: <LuBaggageClaim />, label: "Hotel Status", path: "/hotel/status" },
-      ]
+      icon: <MdOutlineFlight />,
+      label: "Flight Extranet",
+      path: "/flightExtranet",
+  
     },
     {
-      icon: <MdOutlineCancelScheduleSend />, label: "Holiday Management", path: "/holiday",
-      submenu: [
-        { icon: <MdAddCall />, label: "Holiday Booking", path: "/holiday/booking" },
-        { icon: <MdOutlineCancelScheduleSend />, label: "Holiday Schedule", path: "/holiday/schedule" },
-      ]
-    },
-    {
-      icon: <MdOutlineFlight />, label: "Flight Extranet", path: "/flightExtranet",
-      submenu: [
-        { icon: <MdAddCall />, label: "Flight Booking", path: "/flight-extranet/booking" },
-      ]
-    },
-    {
-      icon: <FaHotel />, label: "Hotel Extranet", path: "/hotelExtranet",
-      submenu: [
-        { icon: <MdAddCall />, label: "Hotel Booking", path: "/hotel-extranet/booking" },
-      ]
+      icon: <FaHotel />,
+      label: "Hotel Extranet",
+      path: "/hotelExtranet",
+   
     },
   ];
 
   const setting = [
     {
-      icon: <BiSolidMessageSquareDetail />, label: "Messages", path: "/messages",
-      submenu: [
-        { icon: <BiSolidMessageSquareDetail />, label: "Inbox", path: "/messages/inbox" },
-        { icon: <MdOutlineCancelScheduleSend />, label: "Sent", path: "/messages/sent" },
-      ]
+      icon: <BiSolidMessageSquareDetail />,
+      label: "Messages",
+      path: "/messages",
+     
     },
     {
-      icon: <MdReviews />, label: "Customer Reviews", path: "/reviews",
-      submenu: [
-        { icon: <MdReviews />, label: "Customer Review", path: "/reviews/customer" },
-      ]
+      icon: <MdReviews />,
+      label: "Customer Reviews",
+      path: "/reviews",
+     
     },
     {
-      icon: <MdOutlineSettings />, label: "Settings", path: "/settings" },
+      icon: <GiReceiveMoney />,
+      label: "Markup",
+      path: "/markup",
     
+    },
+      {
+      icon: <BiSolidOffer />,
+      label: "Offer Management",
+      path: "/offermanagement",
+    },
+      {
+      icon: <FaQuestionCircle />,
+      label: "Query Management",
+      path: "/querymanagement",
+    },
+          {
+      icon: <LuNotebookPen />,
+      label: "Blog Management",
+      path: "/blogmanagement",
+    },
+      {
+  icon: <LuChartNoAxesCombined />,
+  label: "Sales Report Management",
+  path: "/salesreportmanagement",
+  submenu: [
+ 
+    {
+      icon: <LuChartNoAxesCombined />,
+      label: "Flight Sales Report",
+      path: "/flightreportmanagement/flight",
+    },
+    {
+      icon: <LuChartNoAxesCombined />,
+      label: "Hotel Sales Report",
+      path: "/hotelreportmanagement/hotel",
+    },
+    // {
+    //   icon: <LuChartNoAxesCombined />,
+    //   label: "Custom Date Range",
+    //   path: "/salesreportmanagement/custom",
+    // },
+       {
+      icon: <LuChartNoAxesCombined />,
+      label: "Holiday Package Sales Report",
+      path: "/holidayreportmanagement/holiday",
+    },
+  ],
+},
+           {
+      icon: <FaSliders />,
+      label: "Slider Management",
+      path: "/slidermanagement",
+    },
+         {
+      icon: <FaPlane />,
+      label: "Flight Setting Management",
+      path: "/flightmanagement",
+    },
+    {
+      icon: <MdOutlineSettings />,
+      label: "Settings",
+      path: "/settings",
+    },
   ];
 
   const renderMenu = (menuList, baseIndex = 0) => {
-  return (
-    <div className="flex flex-col gap-1">
-      {menuList
-        .map((item, index) => {
+    return (
+      <div className="flex flex-col gap-1">
+        {menuList.map((item, index) => {
           const uniqueIndex = baseIndex + index;
 
           // Filter submenus based on search
@@ -118,11 +176,15 @@ export default function Navbar({isCollapsed = false, setIsCollapsed}) {
             sub.label.toLowerCase().includes(searchTerm.toLowerCase())
           );
 
-          const matchesMain =
-            item.label.toLowerCase().includes(searchTerm.toLowerCase());
+          const matchesMain = item.label
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase());
 
           // Show only if main label matches OR any submenu matches
-          if (!matchesMain && (!filteredSubmenu || filteredSubmenu.length === 0)) {
+          if (
+            !matchesMain &&
+            (!filteredSubmenu || filteredSubmenu.length === 0)
+          ) {
             return null;
           }
 
@@ -133,21 +195,28 @@ export default function Navbar({isCollapsed = false, setIsCollapsed}) {
           return (
             <div key={uniqueIndex} className="transition-all duration-300">
               <button
-                onClick={() =>
-                  handleNavigation(item.path)
-                }
+                onClick={() => handleNavigation(item.path)}
                 className={`flex items-center gap-3 px-3 py-2 w-full text-left hover:bg-white/10 cursor-pointer transition-all duration-200 rounded-md ${
                   isCollapsed ? "justify-center" : "justify-between"
-                } ${isActive ? "bg-white text-[var(--primary-color)] rounded-2xl" : "text-white"}`}
+                } ${
+                  isActive
+                    ? "bg-white text-[var(--primary-color)] rounded-2xl"
+                    : "text-white"
+                }`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xl">{item.icon}</span>
-                  {!isCollapsed && <span onClick={() => handleNavigation()}>{item.label}</span>}
+                  {!isCollapsed && (
+                    <span onClick={() => handleNavigation()}>{item.label}</span>
+                  )}
                 </div>
                 {item.submenu && !isCollapsed && (
-                  <span className="text-lg" onClick={ ()=>item.submenu
-                    ? toggleSubMenu(uniqueIndex)
-                    :null}>
+                  <span
+                    className="text-lg"
+                    onClick={() =>
+                      item.submenu ? toggleSubMenu(uniqueIndex) : null
+                    }
+                  >
                     {openMenus[uniqueIndex] ? (
                       <IoIosArrowDropup />
                     ) : (
@@ -187,10 +256,9 @@ export default function Navbar({isCollapsed = false, setIsCollapsed}) {
             </div>
           );
         })}
-    </div>
-  );
-};
-
+      </div>
+    );
+  };
 
   return (
     <nav
@@ -198,7 +266,11 @@ export default function Navbar({isCollapsed = false, setIsCollapsed}) {
         isCollapsed ? "w-32" : "w-72"
       }`}
     >
-      <div className={`flex items-center justify-between p-4 ${isCollapsed ? "flex-col gap-3" : "flex"}`}>
+      <div
+        className={`flex items-center justify-between p-4 ${
+          isCollapsed ? "flex-col gap-3" : "flex"
+        }`}
+      >
         <img src="/logo.svg" alt="logo" className="w-32" />
         <img
           src={isCollapsed ? "/closeTab.svg" : "/closeTab.svg"}
@@ -211,13 +283,14 @@ export default function Navbar({isCollapsed = false, setIsCollapsed}) {
       <div className="flex items-center justify-center w-full mb-2">
         {!isCollapsed ? (
           <div className="w-[90%] p-2 gap-3 rounded-md flex items-center justify-center bg-gray-600 text-white">
-            <CiSearch /> <input
-  type="text"
-  placeholder="Search bar"
-  value={searchTerm}
-  onChange={(e) => setSearchTerm(e.target.value)}
-  className="outline-none w-full bg-transparent"
-/>
+            <CiSearch />{" "}
+            <input
+              type="text"
+              placeholder="Search bar"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="outline-none w-full bg-transparent"
+            />
           </div>
         ) : (
           <div

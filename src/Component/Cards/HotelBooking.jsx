@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MdOutlineImageSearch } from "react-icons/md";
+import { MdOutlineEditNote, MdOutlineImageSearch } from "react-icons/md";
 import { GiNotebook } from "react-icons/gi";
 import { FaPrint } from "react-icons/fa6";
 import HotelStatus from "../Popup/HotelStatus";
@@ -37,11 +37,11 @@ export default function HotelBooking({
   };
 
   return (
-    <div className="bg-white p-2 rounded-xl shadow-md flex flex-col sm:flex-row items-start gap-2 w-full">
+    <div className="bg-white p-2 rounded-xl shadow-md flex flex-col sm:flex-row items-center gap-2 w-full ">
       <img
         src={hotelImage}
         alt={hotelName}
-        className="w-1/3 h-48 object-cover rounded-lg"
+        className="w-1/3 h-40 object-cover rounded-lg"
       />
 
       <div className="flex flex-col gap-2 text-sm w-full">
@@ -74,10 +74,10 @@ export default function HotelBooking({
           </button>
         </div>
 
-        <div className="flex items-center gap-4 text-[var(--primary-color)] text-lg">
-          <MdOutlineImageSearch className="cursor-pointer hover:scale-110 transition" />
-          <GiNotebook className="cursor-pointer hover:scale-110 transition" />
-          <FaPrint className="cursor-pointer hover:scale-110 transition" />
+        <div className="flex items-center gap-4 text-[var(--primary-color)] text-lg h-[28px] ">
+          <MdOutlineImageSearch className="cursor-pointer hover:scale-110 transition h-[28px]" />
+          <MdOutlineEditNote className="cursor-pointer hover:scale-110 transition h-[28px]" />
+          <FaPrint className="cursor-pointer hover:scale-110 transition h-[28px]" />
         </div>
       </div>
 

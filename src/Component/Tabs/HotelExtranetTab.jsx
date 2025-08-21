@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { FaSearch,FaStar } from "react-icons/fa";
+import { FaSearch, FaStar } from "react-icons/fa";
+import PriceSettings from "./PriceSetting";
+import RoomAvailability from "./RoomAvailability";
 
 export default function HotelExtranetTabs() {
   const tabdata = [
@@ -11,7 +13,7 @@ export default function HotelExtranetTabs() {
           city: "Delhi",
           rating: 4,
           status: "Active",
-          rooms: 80,
+          rooms: 2,
           priceStart: 3500,
         },
         {
@@ -19,7 +21,7 @@ export default function HotelExtranetTabs() {
           city: "Goa",
           rating: 5,
           status: "Active",
-          rooms: 120,
+          rooms: 1,
           priceStart: 5200,
         },
         {
@@ -27,7 +29,7 @@ export default function HotelExtranetTabs() {
           city: "Mumbai",
           rating: 3,
           status: "Inactive",
-          rooms: 60,
+          rooms: 1,
           priceStart: 2800,
         },
       ],
@@ -118,107 +120,128 @@ export default function HotelExtranetTabs() {
     },
   ];
 
-
   const PricingTab = () => {
-  return (
-    <div className="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-lg shadow-md">
-      {/* Section 1 */}
-      <div className="flex-1 border rounded-lg p-4 shadow-sm">
-        <h2 className="text-[var(--primary-color)] text-lg font-semibold mb-4 text-center">
-          Standard Pricing
-        </h2>
+    return (
+      <div className="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-lg shadow-md">
+        {/* Section 1 */}
+        <div className="flex-1 border rounded-lg p-4 shadow-sm">
+          <h2 className="text-[var(--primary-color)] text-lg font-semibold mb-4 text-center">
+            Standard Pricing
+          </h2>
 
-        {/* Date Inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Start Date</label>
-            <input type="date" className="input-style" />
+          {/* Date Inputs */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Start Date
+              </label>
+              <input type="date" className="input-style" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                End Date
+              </label>
+              <input type="date" className="input-style" />
+            </div>
           </div>
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">End Date</label>
-            <input type="date" className="input-style" />
+
+          {/* Price Inputs */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Base Price (Per Night)
+              </label>
+              <input type="number" placeholder="3200" className="input-style" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Max Occupancy
+              </label>
+              <input type="number" className="input-style" />
+            </div>
+          </div>
+
+          {/* Extra and GST */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Extra (Per Person)
+              </label>
+              <input type="number" placeholder="800" className="input-style" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                GST (%)
+              </label>
+              <input type="number" value={18} className="input-style" />
+            </div>
           </div>
         </div>
 
-        {/* Price Inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Base Price (Per Night)</label>
-            <input type="number" placeholder="3200" className="input-style" />
-          </div>
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Max Occupancy</label>
-            <input type="number" className="input-style" />
-          </div>
-        </div>
+        {/* Section 2 */}
+        <div className="flex-1 border rounded-lg p-4 shadow-sm">
+          <h2 className="text-[var(--primary-color)] text-lg font-semibold mb-4 text-center">
+            Weekend Special Pricing
+          </h2>
 
-        {/* Extra and GST */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Extra (Per Person)</label>
-            <input type="number" placeholder="800" className="input-style" />
+          {/* Date Inputs */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Start Date
+              </label>
+              <input type="date" className="input-style" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                End Date
+              </label>
+              <input type="date" className="input-style" />
+            </div>
           </div>
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">GST (%)</label>
-            <input type="number" value={18} className="input-style" />
+
+          {/* Price Inputs */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Base Price (Per Night)
+              </label>
+              <input type="number" placeholder="4500" className="input-style" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Max Occupancy
+              </label>
+              <input type="number" className="input-style" />
+            </div>
+          </div>
+
+          {/* Extra and GST */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                Extra (Per Person)
+              </label>
+              <input type="number" placeholder="1000" className="input-style" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-[var(--primary-color)] text-sm mb-1">
+                GST (%)
+              </label>
+              <input type="number" value={18} className="input-style" />
+            </div>
           </div>
         </div>
       </div>
+    );
+  };
 
-      {/* Section 2 */}
-      <div className="flex-1 border rounded-lg p-4 shadow-sm">
-        <h2 className="text-[var(--primary-color)] text-lg font-semibold mb-4 text-center">
-          Weekend Special Pricing
-        </h2>
-
-        {/* Date Inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Start Date</label>
-            <input type="date" className="input-style" />
-          </div>
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">End Date</label>
-            <input type="date" className="input-style" />
-          </div>
-        </div>
-
-        {/* Price Inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Base Price (Per Night)</label>
-            <input type="number" placeholder="4500" className="input-style" />
-          </div>
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Max Occupancy</label>
-            <input type="number" className="input-style" />
-          </div>
-        </div>
-
-        {/* Extra and GST */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">Extra (Per Person)</label>
-            <input type="number" placeholder="1000" className="input-style" />
-          </div>
-          <div className="flex flex-col">
-            <label className="text-[var(--primary-color)] text-sm mb-1">GST (%)</label>
-            <input type="number" value={18} className="input-style" />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// Optional: Tailwind utility shortcut class (add to global styles or tailwind.config.js)
-const style = `
+  // Optional: Tailwind utility shortcut class (add to global styles or tailwind.config.js)
+  const style = `
 .input-style {
   @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)];
 }
 `;
-
-
 
   const [activeTab, setActiveTab] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
@@ -243,20 +266,19 @@ const style = `
   const renderTableRows = (data) =>
     data.map((item, idx) => (
       <tr key={idx} className="border-b hover:bg-gray-50 text-sm">
-       {Object.entries(item).map(([key, val], i) => (
-  <td key={i} className="px-4 py-2 whitespace-nowrap">
-    {key === "rating" ? (
-      <div className="flex text-yellow-500">
-        {Array.from({ length: val }, (_, i) => (
-          <FaStar key={i} className="mr-0.5" />
+        {Object.entries(item).map(([key, val], i) => (
+          <td key={i} className="px-4 py-2 whitespace-nowrap">
+            {key === "rating" ? (
+              <div className="flex text-yellow-500">
+                {Array.from({ length: val }, (_, i) => (
+                  <FaStar key={i} className="mr-0.5" />
+                ))}
+              </div>
+            ) : (
+              val
+            )}
+          </td>
         ))}
-      </div>
-    ) : (
-      val
-    )}
-  </td>
-))}
-
       </tr>
     ));
 
@@ -269,7 +291,7 @@ const style = `
             key={idx}
             onClick={() => {
               setActiveTab(idx);
-              setSearchTerm(""); // clear search on tab switch
+              setSearchTerm("");
             }}
             className={`px-4 py-2 cursor-pointer ${
               activeTab === idx
@@ -282,53 +304,63 @@ const style = `
         ))}
       </div>
 
-      {/* Button & Search */}
-      <div className="flex items-center justify-between mb-4 w-full">
-        <button className="px-4 cursor-pointer py-2 text-sm bg-[var(--primary-color)] text-white rounded-md hover:opacity-90">
-          + Add {tabdata[activeTab].label}
-        </button>
-        <div className="flex items-center gap-2">
-          <div className="flex items-center border border-gray-300 rounded-3xl overflow-hidden h-9">
-            <input
-              type="search"
-              placeholder="Search"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-48 h-full px-3 text-sm outline-none"
-            />
-            <div className="h-full px-3 flex items-center justify-center bg-[var(--primary-color)] text-white">
-              <FaSearch />
+      {/* Button & Search — hide for Pricing and Availability & Booking tabs */}
+      {tabdata[activeTab].label !== "Pricing" &&
+        tabdata[activeTab].label !== "Availability & Booking" && (
+          <div className="flex items-center justify-between mb-4 w-full">
+            <button className="px-4 cursor-pointer py-2 text-sm bg-[var(--primary-color)] text-white rounded-md hover:opacity-90">
+              + Add {tabdata[activeTab].label}
+            </button>
+            <div className="flex items-center gap-2">
+              <div className="flex items-center border border-gray-300 rounded-3xl overflow-hidden h-9">
+                <input
+                  type="search"
+                  placeholder="Search"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-48 h-full px-3 text-sm outline-none"
+                />
+                <div className="h-full px-3 flex items-center justify-center bg-[var(--primary-color)] text-white">
+                  <FaSearch />
+                </div>
+              </div>
+              <img
+                src="/filter.svg"
+                alt="Filter"
+                className="w-5 h-5 cursor-pointer"
+              />
             </div>
           </div>
-          <img
-            src="/filter.svg"
-            alt="Filter"
-            className="w-5 h-5 cursor-pointer"
-          />
-        </div>
-      </div>
+        )}
 
-      {/* Tab Table */}
-      <div className="w-full overflow-x-auto">
-        <table className="min-w-full table-auto border border-gray-200 rounded-lg overflow-hidden">
-          <thead className="bg-gray-50">
-            {filteredData.length > 0 && renderTableHeaders(filteredData)}
-          </thead>
-          <tbody>
-            {filteredData.length > 0 ? (
-              renderTableRows(filteredData)
-            ) : (
-              <tr>
-                <td
-                  colSpan="100%"
-                  className="text-center py-4 text-gray-500 text-sm"
-                >
-                  No results found.
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+      <div className="w-full">
+        {tabdata[activeTab].label === "Pricing" ? (
+          <PriceSettings />
+        ) : tabdata[activeTab].label === "Availability & Booking" ? (
+          <RoomAvailability />
+        ) : (
+          <div className="w-full overflow-x-auto">
+            <table className="min-w-full table-auto border border-gray-200 rounded-lg overflow-hidden">
+              <thead className="bg-gray-50">
+                {filteredData.length > 0 && renderTableHeaders(filteredData)}
+              </thead>
+              <tbody>
+                {filteredData.length > 0 ? (
+                  renderTableRows(filteredData)
+                ) : (
+                  <tr>
+                    <td
+                      colSpan="100%"
+                      className="text-center py-4 text-gray-500 text-sm"
+                    >
+                      No results found.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </div>
   );
